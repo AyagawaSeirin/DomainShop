@@ -1,2 +1,5 @@
 # DomainShop
-一个在线的域名出售页面
+
+随手做的一个域名出售列表网页
+
+[https://rinmi.shop/]
