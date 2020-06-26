@@ -18,7 +18,7 @@
         href="https://twitter.com/AyagawaSeirin" target="_blank">Twitter</a> / <a
         href="mailto:AyagawaSeirin@outlook.com" target="_blank">Mail</a> / <a href="https://github.com/AyagawaSeirin"
                                                                               target="_blank">Github</a>
-    <div class="table-domain">
+    <div class="table-domain" id="table-domain-onsell">
         <table class="mdui-table mdui-table-hoverable">
             <thead>
             <tr>
@@ -29,12 +29,30 @@
                 <th>价格(RMB)</th>
             </tr>
             </thead>
-            <tbody id="table">
+            <tbody id="table_onsell">
             </tbody>
         </table>
     </div>
+    <a href="#table-domain-sold" onclick="seemore();" id="seemore">查看已售出域名</a>
+    <div class="table-domain" id="table-domain-sold">
+        <table class="mdui-table mdui-table-hoverable">
+            <thead>
+            <tr>
+                <th>已售出域名</th>
+                <th>寓意</th>
+                <th>成交价格(RMB)</th>
+            </tr>
+            </thead>
+            <tbody id="table_sold">
+            </tbody>
+        </table>
+    </div>
+    <div class="footer">
+        Copyright © 2020 <a href="https://qwq.best/" target="_blank">Seirin</a>
+    </div>
     <script>
         $(function () {
+            $("#table-domain-sold").hide();
             $.ajax({
                 url: "/domain.json",
                 async: true,
@@ -42,16 +60,26 @@
                 dataType: "json",
                 success: function (data) {
                     for (t = 0; t < data.length; t++) {
-                        console.log();
-                        var dd = new Date();
-                        var today = dd.getFullYear()+'-'+(dd.getMonth()+1)+'-'+dd.getDate();
-                        var daylast = datedifference(today,data[t]['endtime'])
-                        var html = '<tr><td>'+data[t]['domain']+'</td><td>'+data[t]['starttime']+'~'+data[t]['endtime']+'</td><td>'+daylast+'天</td><td>'+data[t]['meaning']+'</td><td>'+data[t]['price']+'元</td>'
-                        $("#table").append(html);
+                        if (data[t]['sold'] === 1) {
+                            var html_sold = '<tr><td>' + data[t]['domain'] + '</td><td>' + data[t]['meaning'] + '</td><td>' + data[t]['price'] + '元</td></tr>';
+                            $("#table_sold").append(html_sold);
+                        } else {
+                            var dd = new Date();
+                            var today = dd.getFullYear() + '-' + (dd.getMonth() + 1) + '-' + dd.getDate();
+                            var daylast = datedifference(today, data[t]['endtime']);
+                            var html_onsell = '<tr><td>' + data[t]['domain'] + '</td><td>' + data[t]['starttime'] + '~' + data[t]['endtime'] + '</td><td>' + daylast + '天</td><td>' + data[t]['meaning'] + '</td><td>' + data[t]['price'] + '元</td></tr>';
+                            $("#table_onsell").append(html_onsell);
+                        }
                     }
                 }
             });
         });
+
+        function seemore(){
+            $("#table-domain-sold").show();
+            $("#seemore").hide();
+        }
+
         function datedifference(sDate1, sDate2) {
             var dateSpan, tempDate, iDays;
             sDate1 = Date.parse(sDate1);

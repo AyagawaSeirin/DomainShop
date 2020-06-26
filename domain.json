@@ -4,34 +4,50 @@
     "starttime": "2020-05-13",
     "endtime": "2021-05-13",
     "meaning": "qwq颜文字，pet宠物，非常的萌",
-    "price": "30"
+    "price": "35"
   },
   {
     "domain": "rua.pet",
     "starttime": "2020-05-13",
     "endtime": "2021-05-13",
     "meaning": "rua不解释，pet宠物，非常的萌",
-    "price": "30"
+    "price": "35"
   },
   {
     "domain": "girl.pet",
     "starttime": "2020-05-13",
     "endtime": "2021-05-13",
     "meaning": "妹子的宠物，非常的萌",
-    "price": "30"
+    "price": "35"
+  },
+  {
+    "domain": "5240520.xyz",
+    "starttime": "2020-03-11",
+    "endtime": "2030-03-11",
+    "meaning": "十年域名，我爱死你我爱你",
+    "price": "35",
+    "sold": 1
   },
   {
     "domain": "erololi.xyz",
     "starttime": "2020-03-11",
     "endtime": "2021-03-11",
     "meaning": "工口萝莉~",
-    "price": "25"
+    "price": "30"
   },
   {
     "domain": "rmb.moe",
     "starttime": "2019-07-17",
     "endtime": "2020-07-17",
     "meaning": "软妹币，萌！非常可爱",
-    "price": "25"
+    "price": "30"
+  },
+  {
+    "domain": "zwz.moe",
+    "starttime": "2019-03-01",
+    "endtime": "2021-03-01",
+    "meaning": "zwz颜文字，萌！非常可爱",
+    "price": "25",
+    "sold": 1
   }
 ]
