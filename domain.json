@@ -49,5 +49,12 @@
     "meaning": "zwz颜文字，萌！非常可爱",
     "price": "25",
     "sold": 1
+  },
+  {
+    "domain": "recgif.com",
+    "starttime": "2017-11-17",
+    "endtime": "2020-11-17",
+    "meaning": "GIF录制",
+    "price": "20"
   }
 ]
