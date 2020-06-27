@@ -41,7 +41,8 @@
     "starttime": "2019-07-17",
     "endtime": "2020-07-17",
     "meaning": "软妹币，萌！非常可爱",
-    "price": "30"
+    "price": "30",
+    "sold": 1
   },
   {
     "domain": "zwz.moe",
@@ -56,6 +57,7 @@
     "starttime": "2017-11-17",
     "endtime": "2020-11-17",
     "meaning": "GIF录制",
-    "price": "20"
+    "price": "20",
+    "sold": 1
   }
 ]
