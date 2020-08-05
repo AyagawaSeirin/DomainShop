@@ -62,10 +62,17 @@
     "sold": 1
   },
   {
-    "domain": "tgno1.xyz",
-    "starttime": "2019-08-10",
-    "endtime": "2020-08-10",
-    "meaning": "TG NO.1!",
-    "price": "5"
+    "domain": "dove.codes",
+    "starttime": "2020-04-24",
+    "endtime": "2021-04-24",
+    "meaning": "鸽子，代码，鸽码社，代码鸽子，咕咕咕",
+    "price": "30"
+  },
+  {
+    "domain": "imloli.me",
+    "starttime": "2020-03-09",
+    "endtime": "2021-03-09",
+    "meaning": "我是萝莉~",
+    "price": "30"
   }
 ]
