@@ -67,13 +67,22 @@
     "starttime": "2020-04-24",
     "endtime": "2021-04-24",
     "meaning": "鸽子，代码，鸽码社，代码鸽子，咕咕咕",
-    "price": "30"
+    "price": "30",
+    "sold": 1
   },
   {
     "domain": "imloli.me",
     "starttime": "2020-03-09",
     "endtime": "2021-03-09",
     "meaning": "我是萝莉~",
+    "price": "30",
+    "sold": 1
+  },
+  {
+    "domain": "fuckgfw.games",
+    "starttime": "2020-04-24",
+    "endtime": "2021-04-24",
+    "meaning": "寓意不解释了，大家都懂",
     "price": "30"
   }
 ]
